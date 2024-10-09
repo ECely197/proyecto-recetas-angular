@@ -1,0 +1,75 @@
+/*=============================
+Aqui comienza el CSS del icono de la luna
+===============================*/
+.icon-moon {
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+#circle-moon {
+  background-color: #f3e5d8;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*=============================
+Aqui termina el CSS del icono de la luna
+===============================*/
+
+
+/*=============================
+Aqui comienza el css de la organizacion del icono y el li de envianos tu receta
+===============================*/
+#conten-receta-icon-moon {
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/*=============================
+Aqui termina el css de la organizacion del icono y el li de envianos tu receta
+===============================*/
+
+
+/*=============================
+Aqui comienza el css del logo de bitcoock
+===============================*/
+.logo-bit {
+  margin-top: 10px;
+}
+/*=============================
+Aqui termina el css del logo de bitcoock
+===============================*/
+
+
+/*=============================
+Aqui comienza el css del header
+===============================*/
+#logo-bitcook-header {
+  background-color: #255538;
+  width: 100%;
+  margin: 0.2%;
+  padding: 0.5%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+#envia-receta {
+    margin: 0;
+  }
+/*=============================
+Aqui termina el css del header
+===============================*/

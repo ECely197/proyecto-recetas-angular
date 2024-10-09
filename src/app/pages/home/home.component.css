@@ -1,0 +1,102 @@
+#titular {
+  background-image: url(/banner-principal.jpg);
+  background-size: cover;
+  width: 100%;
+  max-width: 1444px;
+  max-height: 341px;
+  height: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
+}
+#txt-vaner {
+  background-color: rgba(228, 228, 228, 0.9);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  padding: 1%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+}
+#search-bar {
+  display: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #255538;
+  margin-left: 2%;
+  margin-top: -2%;
+  background-color: rgb(255, 255, 255, 1.6);
+  z-index: 6;
+}
+
+/*=============================
+Aqui termina el css del banner
+===============================*/
+
+#section-recetas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "receta1 receta2 receta3"
+    "receta4 receta5 receta6";
+  gap: 10px;
+  width: 100%;
+  max-width: 1444px;
+  margin: 0;
+  padding: 0;
+}
+
+/*=============================
+Aqui termina el css del banner
+===============================*/
+
+@media (max-width: 768px) {
+  #section-recetas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "receta1 receta2"
+      "receta3 receta4"
+      "receta5 receta6";
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  #titular {
+    font-size: 100%;
+  }
+  #titular img {
+    background-image: url(/banner-principal.jpg);
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  #section-recetas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "receta1"
+      "receta2"
+      "receta3"
+      "receta4"
+      "receta5"
+      "receta6";
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  #titular {
+    font-size: 100%;
+  }
+}

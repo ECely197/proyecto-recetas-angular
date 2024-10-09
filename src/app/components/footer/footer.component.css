@@ -1,0 +1,28 @@
+/*=============================
+Aqui comienza el css del footer
+===============================*/
+
+#logo-bitcook-footer {
+  background-color: #255538;
+  width: 100%;
+  margin: 0.2% 0.2% 0.35% 0.2%;
+  padding: 0.2%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+footer div#logo-bitcook-footer img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*=============================
+Aqui termina el css del footer
+===============================*/

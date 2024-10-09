@@ -1,0 +1,49 @@
+textarea {
+    resize: none;
+    overflow: auto;
+  }
+  .cuadro-texto {
+    width: 100%;
+    padding: 12px 20px;
+    height: 55%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border: 1px solid #6da5c0;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(109, 165, 192, 0.5);
+    outline: none;
+  }
+  
+  button {
+    background-color: #255538;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4d8062;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: #255538;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+  }

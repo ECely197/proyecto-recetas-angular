@@ -1,0 +1,89 @@
+<main id="main-risotto">
+  <div id="section-receta">
+    <img [src]="recipe()?.img" alt="" id="img-risotto" />
+    <h1>{{ recipe()?.title }}</h1>
+    <p>
+      {{ recipe()?.description }}
+    </p>
+    <div class="prep-time">
+      <h3>Tiempo de preparacíon</h3>
+      <ul>
+        <li>Tiempo de preparación: {{ recipe()?.times?.preparation }}</li>
+        <li>Tiempo de cocción: {{ recipe()?.times?.cooking }}</li>
+        <li>Tiempo total: {{ recipe()?.times?.total }}</li>
+      </ul>
+    </div>
+    <h2>Instrucciones</h2>
+    <ol>
+      @for(step of recipe()?.instructions; track step) {
+      <li>{{ step }}</li>
+      }
+    </ol>
+  </div>
+  <div id="section-ingredients">
+    <h2>Ingredientes</h2>
+    <ul>
+      @for(step of recipe()?.preparation; track step) {
+        <li>{{ step }}</li>
+        }
+    </ul>
+
+    <table class="tab-valores">
+      <tr>
+        <td>Calorias</td>
+        <td>{{recipe()?.nutritionalValues?.calories}}</td>
+      </tr>
+      <tr>
+        <td>Carbohidratos</td>
+        <td>{{recipe()?.nutritionalValues?.carbohydrates}}</td>
+      </tr>
+      <tr>
+        <td>Proteinas</td>
+        <td>{{recipe()?.nutritionalValues?.protein}}</td>
+      </tr>
+      <tr>
+        <td>Grasas</td>
+        <td>{{recipe()?.nutritionalValues?.fat}}</td>
+      </tr>
+    </table>
+  </div>
+  <div id="section-more-recipes">
+    <h3>Más Recetas</h3>
+    <a href="./pag-torta-de-semola.html">
+      <div class="section-img-recipes">
+        <img
+          src="https://assets.elgourmet.com/wp-content/uploads/2024/05/E8A9304-1-1024x683.jpg.webp"
+          alt="Torta de sémola"
+          class="img-recipe"
+        />
+        <div class="text-recipe">
+          <h4>Torta de sémola</h4>
+        </div>
+      </div>
+    </a>
+    <a href="./pag-cabrito-enchilado.html">
+      <div class="section-img-recipes">
+        <img
+          src="https://assets.elgourmet.com/wp-content/uploads/2023/12/Cabrito-adobado-3-1-1024x683.jpg.webp"
+          alt="Cabrito enchilado"
+          class="img-recipe"
+        />
+        <div class="text-recipe">
+          <h4>Cabrito enchilado</h4>
+        </div>
+      </div>
+    </a>
+    <div class="section-img-recipes">
+      <a href="./pag-cuadros-frutos-rojos.html">
+        <img
+          src="https://assets.elgourmet.com/wp-content/uploads/2024/05/E8A9199-1-1024x683.jpg.webp"
+          alt="Cuadros de frutos rojos"
+          class="img-recipe"
+        />
+        <div class="text-recipe">
+          <h4>Cuadros de frutos rojos</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>

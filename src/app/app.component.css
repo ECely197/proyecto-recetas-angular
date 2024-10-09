@@ -1,0 +1,15 @@
+/*=============================
+Aqui comienza el css del main
+===============================*/
+
+#info-main {
+  width: 98%;
+  max-width: 1444px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+/*=============================
+Aqui termina el css del main
+===============================*/

@@ -1,0 +1,29 @@
+<main id="info-main">
+  <div id="titular">
+    <div id="txt-vaner">
+      <h1 class="titulo">Te damos la bienvenida</h1>
+    </div>
+
+    <input type="text" id="search-bar" placeholder="Buscar" />
+  </div>
+
+  <div>
+    <h2>Subtitulo</h2>
+  </div>
+  <section id="section-recetas-grid">
+    @if (recipes() === null) {
+      <p>Loading...</p>
+    } @else {
+      @for (recipe of recipes(); track recipe?._id) {
+        <card-recipe
+        [id]="recipe._id"
+        [title]="recipe.title"
+        [img]="recipe.img" 
+        [preparation]="recipe.times.preparation"
+        [cooking]="recipe.times.cooking"
+        [total]="recipe.times.total"
+      ></card-recipe>
+      }
+    }
+  </section>
+</main>

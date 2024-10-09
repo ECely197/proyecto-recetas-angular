@@ -1,0 +1,145 @@
+<main id="info-main">
+  <div>
+    <form (ngSubmit)="handleSubmit()" [formGroup]="newRecipeForm">
+      <div>
+        <label for="">Nombre de tu Receta</label>
+        <input
+          type="text"
+          name="title"
+          class="cuadro-texto"
+          placeholder="Nombre de tu receta"
+          formControlName="title"
+        />
+        @if (!title?.pristine) {
+          @if (title?.errors?.["required"]) {
+            <small>Este campo es requerido</small>
+          }
+          @if (title?.errors?.["minlenght"]) {
+            <small>Como minimo debes ingresar 5 caracteres</small>
+          }
+        }
+      </div>
+
+      <div>
+        <label for="">Descripción</label>
+        <input
+          type="text"
+          name="description"
+          class="cuadro-texto"
+          placeholder="Descripción de tu receta"
+          formControlName="description"
+        />
+      </div>
+
+      <div>
+        <label for="">Foto de tu receta</label>
+        <input
+          type="text"
+          name="Foto de tu receta"
+          class="cuadro-texto"
+          placeholder="Foto de tu receta"
+          formControlName="img"
+        />
+      </div>
+
+      <div>
+        <label for="">Tiempo de Preparación</label>
+        <input
+          type="text"
+          name="preparation"
+          class="cuadro-texto"
+          placeholder="Tiempo de preparación"
+          formControlName="preparation"
+        />
+      </div>
+
+      <div>
+        <label for="">Tiempo de Cocción</label>
+        <input
+          type="text"
+          name="cooking"
+          class="cuadro-texto"
+          placeholder="Tiempo de cocción"
+          formControlName="cooking"
+        />
+      </div>
+
+      <div>
+        <label for="">Tiempo Total</label>
+        <input
+          type="text"
+          name="total"
+          class="cuadro-texto"
+          placeholder="Tiempo total"
+          formControlName="total"
+        />
+      </div>
+
+      <div>
+        <label for="">Instrucciones</label>
+        <textarea
+          name="instructions"
+          class="cuadro-texto"
+          placeholder="Instrucciones"
+          formControlName="instructions"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="">Preparación</label>
+        <textarea
+          name="Preparación"
+          class="cuadro-texto"
+          placeholder="Preparación"
+          formControlName="preparation"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="">Calorías</label>
+        <input
+          type="text"
+          name="calories"
+          class="cuadro-texto"
+          placeholder="Calorías"
+          formControlName="calories"
+        />
+      </div>
+
+      <div>
+        <label for="">Carbohidratos</label>
+        <input
+          type="text"
+          name="carbohydrates"
+          class="cuadro-texto"
+          placeholder="Carbohidratos"
+          formControlName="carbohydrates"
+        />
+      </div>
+
+      <div>
+        <label for="">Proteínas</label>
+        <input
+          type="text"
+          name="protein"
+          class="cuadro-texto"
+          placeholder="Proteínas"
+          formControlName="protein"
+        />
+      </div>
+
+      <div>
+        <label for="">Grasas</label>
+        <input
+          type="text"
+          name="fat"
+          class="cuadro-texto"
+          placeholder="Grasas"
+          formControlName="fat"
+        />
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</main>
